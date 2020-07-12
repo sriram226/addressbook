@@ -8,8 +8,8 @@ spec:
     app: addressbook
   ports:
   - protocol: TCP
-    port: 32760
-    nodePort: 32760
+    port: 8080
+    nodePort: 30002
 
 ---
 
@@ -33,4 +33,4 @@ spec:
       - name: addressbook
         image: ashish158/practice:tagVersion
         ports:
-        - containerPort: 32760
+        - containerPort: 8080
